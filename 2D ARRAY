@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int a[20][20];
+	int i,j,r,c;
+	printf("Enter the rows:");
+	scanf("%d",&r);
+	printf("Enter the columns:");
+	scanf("%d",&c);
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("Enter elements a[%d][%d]",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("printing elements:");
+	for(i=0;i<r;i++)
+	{
+		printf("\n");
+		for(j=0;j<c;j++)
+		{
+			printf("%d\t",a[i][j]);
+     	}
+}
+}
